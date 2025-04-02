@@ -2,8 +2,9 @@ package chandrasekhar.springbootlearning;
 
 public class Main {
     public static void main(String[] args) {
-        Engine engine = new Engine();
-        Car car = new Car(engine);
+        PetrolEngine engine = new PetrolEngine();
+        Car car = new Car();
+        car.setEngine(engine);
         car.run();
     }
 }
